@@ -12,9 +12,8 @@ body{
     height:100vh;
 }
 
-body, input, textarea, select{
+body, input, textarea, select, button{
     font-size: 1.6rem;
-    
 }
 
 .mainContainer{
@@ -58,3 +57,6 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
+.products{list-style-type: none;margin: 0;}
+.btn-orange{background-color: #ff8000;}

@@ -1,0 +1,14 @@
+<ul class="products">
+    <li *ngFor="let product of products">
+        <div class="product">
+            <a href="#">
+                <img src="{{product.image}}" alt="{{product.title}}" />
+                <p>{{product.title}}</p>
+            </a>
+            <div class="productPrice">
+                <div>{{product.price}}</div>
+                <button class="btn btn-orange" type="button">Add to cart</button>
+            </div>
+        </div>
+    </li>
+</ul>
