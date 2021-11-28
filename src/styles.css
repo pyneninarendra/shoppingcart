@@ -58,5 +58,39 @@ footer{
     justify-content: center;
 }
 
-.products{list-style-type: none;margin: 0;}
-.btn-orange{background-color: #ff8000;}
+.products{list-style-type: none;margin: 0;padding: 0;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;}
+.products li{
+    flex: 0 1 29rem;
+    height: 47rem;
+    padding: 1rem;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product img{
+    max-height: 37rem;
+    max-width: 37rem;
+}
+
+.product-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price div,
+.product-price button{
+    text-align: center;
+    flex: 1;
+}
+
+.product-price div{
+    font-size: 2rem;
+}
+
+.btn.primary{background-color: #f0c040; padding:1rem;border:0.1rem solid #c0c0c0;cursor: pointer;}
+.btn.primary:hover{border-color:#808080;}
