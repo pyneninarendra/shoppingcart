@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./../node_modules/font-awesome/css/font-awesome.min.css";
+@import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    height:100vh;
+}
+
+body, input, textarea, select{
+    font-size: 1.6rem;
+    
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+a:hover{color:#ff8000;text-decoration: none;}
+header a{color:#fff;}
+header{
+    display: flex;
+    grid-area: header;
+    background-color: #203040;
+    color: #fff;
+    align-items: center;
+    padding: .5rem;
+}
+
+main{
+    grid-area: main;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+    flex: 3 60rem;
+}
+.sidebar{
+    flex: 1 10rem;
+}
+
+footer{
+    display: flex;
+    grid-area: footer;
+    background-color: #203040;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+}
